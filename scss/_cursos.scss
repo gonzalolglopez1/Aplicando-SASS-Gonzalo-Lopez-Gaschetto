@@ -2,14 +2,19 @@
     display: flex;
 
     .imgcursos {
-        width: 40%;
+        width: 50%;
+        h3{
+            padding: 2rem;
+        }
 
         img{
-            width: 90%;
-            margin-top: 70px;
+            width: 80%;
+            margin-top: 50px;
+            padding: 0 2rem;
         }
     }
     .cursos {
+        padding: 3rem 1rem ;
         width: 50%;
         align-self: center;
         h4{
