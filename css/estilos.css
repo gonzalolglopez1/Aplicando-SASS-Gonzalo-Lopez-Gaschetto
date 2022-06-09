@@ -1,570 +1,320 @@
+.sectioncursos {
+  display: flex; }
+  .sectioncursos .imgcursos {
+    width: 40%; }
+    .sectioncursos .imgcursos img {
+      width: 90%;
+      margin-top: 70px; }
+  .sectioncursos .cursos {
+    width: 50%;
+    align-self: center; }
+    .sectioncursos .cursos h4 {
+      width: 50%;
+      align-self: center; }
+    .sectioncursos .cursos p {
+      font-size: 15px;
+      letter-spacing: 5px; }
+
+.sectionclases {
+  display: flex;
+  justify-content: space-between; }
+  .sectionclases .clases {
+    width: 50%;
+    margin-left: 1.3rem;
+    margin-top: 5rem; }
+  .sectionclases .imgcartascontenedor {
+    margin-top: 5rem;
+    padding: 1rem; }
+
+/* Aca empieza cartas  lunas y expresion*/
+.contenedorflexlunas {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contenedorflexlunas .imglunas {
+    width: 20em;
+    transition: all 0.3s; }
+    .contenedorflexlunas .imglunas:hover {
+      transform: scale(1.1); }
+
+.contenedorflex_reel {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contenedorflex_reel video {
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+
+.contenedorflex_contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contenedorflex_contacto fieldset {
+    width: 100%;
+    padding: 30px;
+    margin-top: 5rem;
+    margin-bottom: 10rem; }
+    .contenedorflex_contacto fieldset input {
+      margin: 20px;
+      width: 90%; }
+    .contenedorflex_contacto fieldset textarea {
+      width: 90%;
+      height: 150px;
+      margin: 20px;
+      resize: none; }
+
 * {
-    margin: 0;
-    padding: 0;    
-    box-sizing: border-box;
-
-}
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-    height: auto;
- 
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-   
-}
-.gridcontenedor{
-   max-height: 100%;
+  height: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold; }
+  body .gridcontenedor {
+    max-height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows:1fr auto 30em;
+    grid-template-rows: 1fr auto 30em;
     grid-template-areas: "header header header header header header header header header header"
-    "main main main main main main main main main main"
-    "footer footer footer footer footer footer footer footer footer footer";
-}
-/* Aca empieza el Header */
-
-.header{
-  height: 100vh;
-    grid-area: header;
-    background-color: rgb(185, 185, 253);    
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.2)),
-    url(/img/Solportadaheader.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  
-   
- 
-    
-}
-
-
-
-
-h2 {
-    font-size: 2.5rem;
-   
-    
-}
-.logosol__nav{
-    padding: 28px;
-    margin-right: 15em;
-}
-.logosol__nav a{
-    text-decoration: none;   
-    color: wheat;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: sans-serif;
-    text-shadow: 4px 2px rgb(231, 99, 244) ;
-    text-shadow: 4px 2px rgb(231, 99, 244) ;
-    
-}
-
-.nav-link{
-    
-    color: rgb(222, 219, 219);
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-   
-    letter-spacing: 0.3rem;
-}
-
-
-
-.navbar{
-    width: 90%;
-    align-self: center;
-}
-
-.container-fluid{
-    width: 70%;
-}
-.nav-link{
-    margin: 0 5px;
-    transition: 1s;
-    border:1px solid transparent;
-}
-
-.nav-link:hover{
-    color: rgb(240, 181, 230);
-    border: 1px solid;
-    border-radius: 2em;
-    background-color: rgb(194, 151, 151);
-    color: rgb(239, 149, 224) ;
-}
-.navbar-toggler-icon {
-    background-color: blueviolet;
-    
-}
-
-.nav-link:focus{
-    color: rgb(222, 219, 219);  
-}
-
-
-
-/* Aca empieza el main */
-
-.main {
-    
-   grid-area: main;
-    
-    background-color: rgb(240, 181, 230);
-
-   
-}
-
-.contenedorflex{
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    
-    
-   
-}
-
-p {
-    
-    width: 100%;
-    letter-spacing: 5px;
-    line-height: 20px;
-    padding: 1rem 2rem;
-    font-size: large;
-    font-size: 1rem;
-}
-
-h3 {
-   
-    font-size: 30px;
-    padding: 2rem;
-   
-}
-
-.texto1 {
-    
-   
-    /* border: 0.5px solid rgb(168, 245, 245);
-    box-shadow: rgb(217, 236, 253) 5px 5px 2px 1px;
-    border-radius: 1em; */
-    display: flex;
-    flex-direction: column;  
-    width: 60%;     
-}
-
-
-
-.imagenmain2{
-    margin-top: 4e;    
-    
-    border: 0.5px unset rgb(168, 245, 245);
-    box-shadow: rgb(217, 236, 253) 1px 1px 1px;
-    border-radius: 1em;
-    
-
-}
-
-.fotomain {
-    border-radius: 1em;
-    /* margin: auto 90px; */
-    height: 30rem;
-}
-
-.noticias{
-    margin: 4rem 0;
-   padding: 2rem;
-    width: 50%;
-    height: 30%;
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;    
-    border: 1px solid black;
-    border-radius: 2em
-}
-/* Aca empieza cursos */
-
-.sectioncursos{
-    
-    display: flex;
-  
-}
-h6{
-    font-size: 2rem;
-}
-
-h4{
-    width: 80%;
-    font-size: 1.2rem;
-    padding: 30px 0;  
-    
-}
-
-.cursos{
-   width: 50%;
-    align-self: center;
-    
-}
-
-.cursos p {
-      
-    font-size: 15px;    
-    letter-spacing: 5px;
-    
-}
-
-.imgcursos{
-    width: 40%;
-}
-.imgcursos img{
-    width:90%;
-    margin-top: 70px;
-}
-
-
-
-
-
-/* Aca empieza cartas */
-
-.sectionclases{
-    
-    display: flex;
-    justify-content: space-between;
-}
-
-.clases{
-    width: 50%;
-    margin-left: 1.3rem;
-}
-
-.pcartas {
-     
-    width: 100%;
-    letter-spacing: 7px;
-    line-height: 25px;
-}
-
- .imgclases{
-     width: 30rem;
-     
- }
-
- .clases , .imgcartascontenedor{
-     margin-top: 5rem;
- }
-.imgcartascontenedor{
-    
-    padding: 1rem;
-}
-
-
-/* Aca empieza reel */
-
-.contenedorflex_reel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-video{
-    width: 50%;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-}
-
-/* Aca empieza Contacto */
-.contenedorflex_contacto{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-fieldset{
-    
-    
-    width: 30em;   
-    padding: 30px;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-}
-
-input{
-    margin: 20px;
-    width: 90%;
-    
-}
-
-textarea{
-    width: 90%;
-    height: 150px;
-    margin: 20px;
-    resize: none;
-    
-    
-}
-
-
-/* Aca empieza FOOTER */
-
-
-.footer {
-    grid-area: footer;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;  
-    align-items: center;     
-   
-    
-    background-color: rgba(238, 200, 200, 0.9);
-}
-
-hr{
-    
-   
-    
-    width: 80%;
-}
-h5 {
-    font-size: 1.2rem;
-    font-style: italic;
-    text-transform: uppercase;
-  
-}
-
-.redes{
-    align-self: center;
-}
-.redes a {
-    margin: 0 1.3rem;
-    color: rgb(99, 93, 82);
-    display: inline-block;
-
-}
-
-i {
-    font-size: 1.3rem;
-    
-    color: #000;
-}
-
-
-
-/* MEDIA QUERIES */
-
-/* 
-
-@media screen and (max-width:768px) {
-    
-    /* Index */
-
-
-    nav{
-        flex-direction: column;
-        align-items: center;
-    }
-   
-    ul li a{
-        font-size: 1rem;
-    }   
-    p {
-        width: 100%;       
-    }
-    
-    
-   .contenedorflex{
-       flex-direction: column;
-   }
-    
-    .texto1 {
-        width: 90%;        
-        
-    }
-    
-    h3{
-        text-align: center;
-    }
-    
-    .imagenmain2{
-        margin-top: 5em; 
-        margin: 0 auto;
-            
-        
-    }
-    
-    .fotomain {          
-        height: 600px;
-        margin: 0 auto;
-        
-     }
-
-     i {
-        font-size: 20px;
-        margin: 0 ;
-        color: #000;
-    }
-
-    /* cursos */
-
-   .sectioncursos{
-       flex-direction: column;
-   }
-  .imgcursos{
+ "main main main main main main main main main main"
+ "footer footer footer footer footer footer footer footer footer footer"; }
+    body .gridcontenedor .header {
+      height: 100vh;
+      grid-area: header;
+      background-color: #b9b9fd;
       display: flex;
       flex-direction: column;
-      align-items: center;
-  }
-     /* CARTAS */
-     .sectionclases{
-        width: 100%;
-        height: 100%;
+      justify-content: space-between;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url(/img/Solportadaheader.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+      body .gridcontenedor .header .logosol__nav {
+        padding: 28px;
+        margin-right: 15em; }
+        body .gridcontenedor .header .logosol__nav a {
+          text-decoration: none;
+          color: wheat;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-family: sans-serif;
+          text-shadow: 4px 2px #e763f4;
+          text-shadow: 4px 2px #e763f4; }
+          body .gridcontenedor .header .logosol__nav a h2 {
+            font-size: 2.5rem; }
+      body .gridcontenedor .header .navbar {
+        width: 90%;
+        align-self: center; }
+        body .gridcontenedor .header .navbar .container-fluid {
+          width: 70%; }
+          body .gridcontenedor .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+            background-color: blueviolet; }
+          body .gridcontenedor .header .navbar .container-fluid .collapse .navbar-nav .nav-link {
+            margin: 0 5px;
+            transition: 1s;
+            border: 1px solid transparent;
+            color: #dedbdb;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            letter-spacing: 0.3rem; }
+            body .gridcontenedor .header .navbar .container-fluid .collapse .navbar-nav .nav-link:hover {
+              color: #f0b5e6;
+              border: 1px solid;
+              border-radius: 2em;
+              background-color: #c29797;
+              color: #ef95e0; }
+            body .gridcontenedor .header .navbar .container-fluid .collapse .navbar-nav .nav-link:focus {
+              color: #dedbdb; }
+          body .gridcontenedor .header .navbar .container-fluid .collapse .dropdown-menu {
+            background-color: #ef95e0; }
+            body .gridcontenedor .header .navbar .container-fluid .collapse .dropdown-menu .dropdown-item {
+              font-weight: bolder; }
+    body .gridcontenedor .main {
+      grid-area: main;
+      background-color: #f0b5e6; }
+      body .gridcontenedor .main .contenedorflex {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        
-    }
+        align-items: center; }
+        body .gridcontenedor .main .contenedorflex .texto1 {
+          display: flex;
+          flex-direction: column;
+          width: 60%; }
+          body .gridcontenedor .main .contenedorflex .texto1 p {
+            width: 100%;
+            letter-spacing: 5px;
+            line-height: 20px;
+            padding: 1rem 2rem;
+            font-size: large;
+            font-size: 1rem; }
+          body .gridcontenedor .main .contenedorflex .texto1 h3 {
+            font-size: 30px;
+            padding: 2rem; }
+        body .gridcontenedor .main .contenedorflex .noticias {
+          margin: 4rem 0;
+          padding: 2rem;
+          width: 50%;
+          height: 30%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          border: 1px solid black;
+          border-radius: 2em; }
+    body .gridcontenedor .footer {
+      grid-area: footer;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: rgba(238, 200, 200, 0.9); }
+      body .gridcontenedor .footer h5 {
+        font-size: 1.2rem;
+        font-style: italic;
+        text-transform: uppercase; }
+      body .gridcontenedor .footer .redes {
+        align-self: center; }
+        body .gridcontenedor .footer .redes a {
+          margin: 0 1.3rem;
+          color: #635d52;
+          display: inline-block; }
+        body .gridcontenedor .footer .redes i {
+          font-size: 1.3rem;
+          color: #000; }
+
+@media screen and ( max-width:576px ) {
     
 
-   
-   /* REEL */
-   
-   video{
-       width: 500px;
-       
-   }
-   
- 
-  
 
-@media only screen and (max-width:576px){
-   
-    /* Index */
-  
-   
-   .container-fluid{
-       flex-direction: column-reverse;
-       
-      
-   }
-      
-       
-  .navbar-nav{
-      flex-wrap: no;
-      margin: 0;
-  }     
-       
-  .navbar-toggler{
-      position: relative;
-      bottom: 5em;
-      margin: 0;
-  } 
-  
-.nav-item a{
-    margin: 0;
-    height: 5em;
-}
-    .nav-link{
-        font-size: 1rem;
-       margin: 0;
-        text-align: center;
-        margin-bottom: 17em;
-    }
-   
-    h3{
-        text-align: center;
-    }
-    
-
-  
-    
-    .contenedorflex{
-        flex-direction: column;
-    }
-
-    h2{
-        font-size: 1.5rem;
-    }
-
-     /* cursos */
-
-     .imgcursos1{
-         width: 40%;
+            /* Index */
+        
+        .texto1 {
+        
+            width:100%;     
+                
+            }
+            .container-fluid {
+                flex-direction: column-reverse;
         
         
-     }
-     
-     .cursos{
-         width: 80%;
-         
-     }
-     .cursos p{
-         width: 100%;
-     }
-
-     /* CLASES */
-
-     .sectionclases{
-        flex-direction: column;
+            }
         
         
-         
-     }
-     .clases{
-         width: 80%;
-         margin: 0 auto;
+            .navbar-nav {
+                flex-wrap: no;
+                margin: 0;
+            }
+        
+           
+        
+            .nav-link {
+                font-size: 1rem;
+                margin: 0;
+                text-align: center;
+                margin-bottom: 17em;
+            }
+        
+            h3 {
+                text-align: center;
+            }
+        
+        
+        
+        
+            .contenedorflex {
+                flex-direction: column;
+            }
+        
+            h2 {
+                font-size: 1.5rem;
+            }
+        
+            /* cursos */
+            .sectioncursos{
+                flex-direction: column;
+            }
+            .imgcursos1 {
+                width: 40%;
+        
+        
+            }
+        
+            .cursos {
+                width: 80%;
+        
+            }
+        
+            .cursos p {
+                width: 100%;
+            }
+        
+            /* CLASES */
+        
+            .sectionclases {
+                flex-direction: column;
+        
+        
+        
+            }
+        
+            .clases {
+                width: 80%;
+                margin: 0 auto;
+            }
+        
+            .pacartas {
+                width: 90%;
+            }
+        
+            .imgcartascontenedor {
+                width: 90%;
+        
+            }
+        
+            .imgclases {
+                width: 100%;
+            }
+        
+        
+        
+        
+        
+            /* REEL */
+            video {
+                width: 25em;
+                
+            }
+        
+            /* footer */
+        
+            .fa-brands {
+                font-size: 1rem;
+            }
+        
+            .redes {
+        
+                align-self: center;
+        
+            }
+        
+            .redes a {
+                margin: 0 1rem;
+                align-self: center;
+            }
+        
+            h5 {
+                font-size: 1rem;
+            }
+        
+            .cajacontacto {
+                width: 100%;
+            }
+            fieldset{
+                width: 100%;
+            }
         }
-    .pacartas {
-         width: 90%;
-     }
-     .imgcartascontenedor {
-       width: 90%;
-
-     } 
-
-     .imgclases{
-        width: 100%;
-     }
-       
-      
-      
-    
-
-    /* REEL */
-    video{
-        width: 80%;
-    }
-
-    /* footer */
-   
-     .fa-brands{
-         font-size: 1rem;
-     }
-     .redes{
-         
-         align-self: center;
-         
-     }
-    .redes a{
-        margin: 0 1rem;
-        align-self: center;
-    }
-    h5{
-        font-size: 1rem;
-    }
-
-    fieldset{
-        width: 20em;
-    }
-} 

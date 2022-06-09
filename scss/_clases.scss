@@ -1,0 +1,28 @@
+.sectionclases {
+    display: flex;
+    justify-content: space-between;
+    .clases {
+        width: 50%;
+        margin-left: 1.3rem;
+        margin-top: 5rem;
+    }
+    .imgcartascontenedor{
+        margin-top: 5rem;
+        padding: 1rem;
+    }
+}
+
+/* Aca empieza cartas  lunas y expresion*/
+.contenedorflexlunas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .imglunas {
+        width: 20em;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+}
