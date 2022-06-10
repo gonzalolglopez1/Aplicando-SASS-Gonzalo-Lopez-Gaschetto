@@ -1,13 +1,124 @@
-@media screen and ( max-width:576px ){
+@media screen and (max-width:576px) {
+
     /* Index */
+    .header {
+        .logosol__nav {
+            a {
+                h2 {
 
-    
+                    font-size: 1.5rem;
+
+                }
+            }
+        }
+    }
+
+    .container-fluid {
+        flex-direction: column-reverse;
+
+
+
+        .collapse {
+
+            .navbar-nav {
+
+                .nav-link {
+                    font-size: 1rem;
+                    margin: 0;
+                    text-align: center;
+                    margin-bottom: 17em;
+                }
+            }
+
+        }
 
 
 
 
 
+    }
 
 
 
+
+    .texto1 {
+        width: 100% !important;
+        text-align: center;
+
+
+
+    }
+
+
+    /* cursos */
+
+    .sectioncursos {
+        flex-direction: column;
+
+        .imgcursos {
+            width: 100%;
+
+            .imgcursos1 {
+                width: 100%;
+            }
+        }
+
+        .cursos {
+            width: 80%;
+
+            p {
+                width: 100%;
+            }
+
+        }
+    }
+
+    /* CLASES */
+    .sectionclases {
+        flex-direction: column;
+
+        .clases {
+            width: 80%;
+            margin: 0 auto;
+
+            .pacartas {
+                width: 90%;
+            }
+        }
+
+        .imgcartascontenedor {
+            width: 90%;
+
+            .imgclases {
+                width: 100%;
+            }
+
+        }
+
+
+
+    }
+
+
+    /* REEL */
+
+    .contenedorflex_reel {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .videosol {
+            text-align: center;
+
+            video {
+                width: 80%;
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+            }
+        }
+
+
+    }
 }
+

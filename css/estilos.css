@@ -74,6 +74,56 @@
       margin: 20px;
       resize: none; }
 
+@media screen and (max-width: 576px) {
+  /* Index */
+  .header .logosol__nav a h2 {
+    font-size: 1.5rem; }
+  .container-fluid {
+    flex-direction: column-reverse; }
+    .container-fluid .collapse .navbar-nav .nav-link {
+      font-size: 1rem;
+      margin: 0;
+      text-align: center;
+      margin-bottom: 17em; }
+  .texto1 {
+    width: 100% !important;
+    text-align: center; }
+  /* cursos */
+  .sectioncursos {
+    flex-direction: column; }
+    .sectioncursos .imgcursos {
+      width: 100%; }
+      .sectioncursos .imgcursos .imgcursos1 {
+        width: 100%; }
+    .sectioncursos .cursos {
+      width: 80%; }
+      .sectioncursos .cursos p {
+        width: 100%; }
+  /* CLASES */
+  .sectionclases {
+    flex-direction: column; }
+    .sectionclases .clases {
+      width: 80%;
+      margin: 0 auto; }
+      .sectionclases .clases .pacartas {
+        width: 90%; }
+    .sectionclases .imgcartascontenedor {
+      width: 90%; }
+      .sectionclases .imgcartascontenedor .imgclases {
+        width: 100%; }
+  /* REEL */
+  .contenedorflex_reel {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contenedorflex_reel .videosol {
+      text-align: center; }
+      .contenedorflex_reel .videosol video {
+        width: 80%;
+        margin-top: 4rem;
+        margin-bottom: 4rem; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -123,7 +173,7 @@ body {
             background-color: blueviolet; }
           body .gridcontenedor .header .navbar .container-fluid .collapse .navbar-nav .nav-link {
             margin: 0 5px;
-            transition: 1s;
+            transition: 0.8s;
             border: 1px solid transparent;
             color: #dedbdb;
             text-decoration: none;
@@ -134,10 +184,7 @@ body {
               color: #f0b5e6;
               border: 1px solid;
               border-radius: 2em;
-              background-color: #c29797;
-              color: #ef95e0; }
-            body .gridcontenedor .header .navbar .container-fluid .collapse .navbar-nav .nav-link:focus {
-              color: #dedbdb; }
+              background-color: #c29797; }
           body .gridcontenedor .header .navbar .container-fluid .collapse .dropdown-menu {
             background-color: #ef95e0; }
             body .gridcontenedor .header .navbar .container-fluid .collapse .dropdown-menu .dropdown-item {

@@ -2,7 +2,7 @@
 @import "_clases";
 @import "_reel";
 @import "_contacto";
-
+@import "_mediaqueries";
 
 
 * {
@@ -85,7 +85,7 @@ body {
                         .navbar-nav {
                             .nav-link {
                                 margin: 0 5px;
-                                transition: 1s;
+                                transition: 0.8s;
                                 border: 1px solid transparent;
                                 color: rgb(222, 219, 219);
                                 text-decoration: none;
@@ -98,12 +98,10 @@ body {
                                     border: 1px solid;
                                     border-radius: 2em;
                                     background-color: rgb(194, 151, 151);
-                                    color: rgb(239, 149, 224);
+                                    
                                 }
     
-                                &:focus {
-                                    color: rgb(222, 219, 219);
-                                }
+                              
                             }
 
 
