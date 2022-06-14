@@ -1,3 +1,10 @@
+@mixin contenedorsi {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
 .sectionclases {
     display: flex;
     justify-content: space-between;
@@ -14,7 +21,7 @@
 
 /* Aca empieza cartas  lunas y expresion*/
 .contenedorflexlunas {
-    @include contenedorsigosylunas;
+    @include contenedorsi;
     
     .imglunas {
         margin-top: 2rem;
@@ -26,4 +33,5 @@
     }
 
 }
+
 
