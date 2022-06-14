@@ -1,24 +1,3 @@
-.sectioncursos {
-  display: flex; }
-  .sectioncursos .imgcursos {
-    width: 50%; }
-    .sectioncursos .imgcursos h3 {
-      padding: 2rem; }
-    .sectioncursos .imgcursos img {
-      width: 80%;
-      margin-top: 50px;
-      padding: 0 2rem; }
-  .sectioncursos .cursos {
-    padding: 3rem 1rem;
-    width: 50%;
-    align-self: center; }
-    .sectioncursos .cursos h4 {
-      width: 50%;
-      align-self: center; }
-    .sectioncursos .cursos p {
-      font-size: 15px;
-      letter-spacing: 5px; }
-
 .sectionclases {
   display: flex;
   justify-content: space-between; }
@@ -44,18 +23,6 @@
     .contenedorflexlunas .imglunas:hover {
       transform: scale(1.1); }
 
-.contenedorflex_reel {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .contenedorflex_reel .videosol {
-    text-align: center; }
-    .contenedorflex_reel .videosol video {
-      width: 50%;
-      margin-top: 4rem;
-      margin-bottom: 4rem; }
-
 .contenedorflex_contacto {
   display: flex;
   flex-direction: column;
@@ -73,6 +40,27 @@
       height: 150px;
       margin: 20px;
       resize: none; }
+
+.sectioncursos {
+  display: flex; }
+  .sectioncursos .imgcursos {
+    width: 50%; }
+    .sectioncursos .imgcursos h3 {
+      padding: 2rem; }
+    .sectioncursos .imgcursos img {
+      width: 80%;
+      margin-top: 50px;
+      padding: 0 2rem; }
+  .sectioncursos .cursos {
+    padding: 3rem 1rem;
+    width: 50%;
+    align-self: center; }
+    .sectioncursos .cursos h4 {
+      width: 50%;
+      align-self: center; }
+    .sectioncursos .cursos p {
+      font-size: 15px;
+      letter-spacing: 5px; }
 
 @media screen and (max-width: 576px) {
   /* Index */
@@ -124,6 +112,22 @@
         margin-top: 4rem;
         margin-bottom: 4rem; } }
 
+.contenedorflex_reel {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contenedorflex_reel .videosol {
+    text-align: center; }
+    .contenedorflex_reel .videosol video {
+      width: 50%;
+      margin-top: 4rem;
+      margin-bottom: 4rem; }
+
+body .gridcontenedor .header, body .gridcontenedor .main .contenedorflex, body .gridcontenedor .main .contenedorflex .texto1, body .gridcontenedor .main .contenedorflex .noticias, body .gridcontenedor .footer {
+  display: flex;
+  flex-direction: column; }
+
 * {
   margin: 0;
   padding: 0;
@@ -144,8 +148,6 @@ body {
       height: 100vh;
       grid-area: header;
       background-color: #b9b9fd;
-      display: flex;
-      flex-direction: column;
       justify-content: space-between;
       background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url(../img/Solportadaheader.jpeg);
       background-repeat: no-repeat;
@@ -193,12 +195,8 @@ body {
       grid-area: main;
       background-color: #f0b5e6; }
       body .gridcontenedor .main .contenedorflex {
-        display: flex;
-        flex-direction: column;
         align-items: center; }
         body .gridcontenedor .main .contenedorflex .texto1 {
-          display: flex;
-          flex-direction: column;
           width: 60%; }
           body .gridcontenedor .main .contenedorflex .texto1 p {
             width: 100%;
@@ -215,8 +213,7 @@ body {
           padding: 2rem;
           width: 50%;
           height: 30%;
-          display: flex;
-          flex-direction: column;
+          box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.75);
           align-items: center;
           justify-content: space-around;
           border: 1px solid black;
@@ -224,8 +221,6 @@ body {
     body .gridcontenedor .footer {
       grid-area: footer;
       height: auto;
-      display: flex;
-      flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
       background-color: rgba(238, 200, 200, 0.9); }
