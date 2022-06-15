@@ -1,20 +1,10 @@
 @import "_clases";
 @import "_contacto";
-@import "_cursos";
+@import "_talleres";
 @import "_mediaqueries";
 @import "_reel";
+@import "_utilities";
 
-// EXTEND
-
-%flexcolumn {
-    display: flex;
-    flex-direction: column;
-}
-
-
-// variable
-$pinkmain:rgb(240, 181, 230);
-$greyfoot:rgba(238, 200, 200, 0.9);
 
 
 * {
@@ -171,6 +161,7 @@ body {
                         padding: 1rem 2rem;
                         font-size: large;
                         font-size: 1rem;
+                       
                     }
 
                     h3 {
@@ -210,6 +201,7 @@ body {
                 font-size: 1.2rem;
                 font-style: italic;
                 text-transform: uppercase;
+                font-weight: bolder;
 
             }
 

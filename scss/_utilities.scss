@@ -1,0 +1,21 @@
+// EXTEND
+
+%flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+
+// variable
+$pinkmain:rgb(240, 181, 230);
+$greyfoot:rgba(238, 200, 200, 0.9);
+
+// MIXIN
+
+@mixin contenedorsi {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 

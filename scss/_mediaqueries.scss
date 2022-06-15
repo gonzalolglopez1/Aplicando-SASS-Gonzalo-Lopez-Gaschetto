@@ -55,9 +55,11 @@
 
     .sectioncursos {
         flex-direction: column;
+        
 
         .imgcursos {
             width: 100%;
+            
 
             .imgcursos1 {
                 width: 100%;
@@ -99,7 +101,15 @@
 
 
     }
-
+    .contenedorflexlunas{
+        flex-direction: column;
+        .imglunas{
+            width: 100%;
+        }
+        .plunas{
+            width: 100%;
+        }
+    }
 
     /* REEL */
 
@@ -112,7 +122,7 @@
         .videosol {
             text-align: center;
 
-            video {
+            .vsol {
                 width: 80%;
                 margin-top: 4rem;
                 margin-bottom: 4rem;

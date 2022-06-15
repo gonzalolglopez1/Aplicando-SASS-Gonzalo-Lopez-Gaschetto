@@ -1,27 +1,24 @@
-.sectionclases {
+.sectioncursos {
   display: flex;
-  justify-content: space-between; }
-  .sectionclases .clases {
+  margin-bottom: 3rem; }
+  .sectioncursos .imgcursos {
+    width: 50%; }
+    .sectioncursos .imgcursos h3 {
+      padding: 2rem; }
+    .sectioncursos .imgcursos img {
+      width: 80%;
+      margin-top: 50px;
+      padding: 0 2rem; }
+  .sectioncursos .cursos {
+    padding: 3rem 1rem;
     width: 50%;
-    margin-left: 1.3rem;
-    margin-top: 5rem; }
-  .sectionclases .imgcartascontenedor {
-    margin-top: 5rem;
-    padding: 1rem; }
-
-/* Aca empieza cartas  lunas y expresion*/
-.contenedorflexlunas {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .contenedorflexlunas .imglunas {
-    margin-top: 2rem;
-    width: 20em;
-    transition: all 0.3s; }
-    .contenedorflexlunas .imglunas:hover {
-      transform: scale(1.1); }
+    align-self: center; }
+    .sectioncursos .cursos h4 {
+      width: 50%;
+      align-self: center; }
+    .sectioncursos .cursos p {
+      font-size: 15px;
+      letter-spacing: 5px; }
 
 .contenedorflex_contacto {
   display: flex;
@@ -41,26 +38,47 @@
       margin: 20px;
       resize: none; }
 
-.sectioncursos {
-  display: flex; }
-  .sectioncursos .imgcursos {
-    width: 50%; }
-    .sectioncursos .imgcursos h3 {
-      padding: 2rem; }
-    .sectioncursos .imgcursos img {
-      width: 80%;
-      margin-top: 50px;
-      padding: 0 2rem; }
-  .sectioncursos .cursos {
-    padding: 3rem 1rem;
+body .gridcontenedor .header, body .gridcontenedor .main .contenedorflex, body .gridcontenedor .main .contenedorflex .texto1, body .gridcontenedor .main .contenedorflex .noticias, body .gridcontenedor .footer {
+  display: flex;
+  flex-direction: column; }
+
+.sectionclases {
+  display: flex;
+  justify-content: space-between; }
+  .sectionclases .clases {
     width: 50%;
-    align-self: center; }
-    .sectioncursos .cursos h4 {
-      width: 50%;
-      align-self: center; }
-    .sectioncursos .cursos p {
-      font-size: 15px;
-      letter-spacing: 5px; }
+    margin-left: 1.3rem;
+    margin-top: 5rem; }
+  .sectionclases .imgcartascontenedor {
+    margin-top: 5rem;
+    padding: 1rem; }
+
+/* Aca empieza cartas  lunas y expresion*/
+.texto1 {
+  margin: 3rem 1rem; }
+  .texto1 h3 {
+    font-weight: bolder; }
+
+.contenedorflexlunas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5rem; }
+  .contenedorflexlunas .imglunas {
+    width: 35%;
+    transition: all 0.3s; }
+    .contenedorflexlunas .imglunas:hover {
+      transform: scale(1.1); }
+
+.plunas {
+  margin: 0;
+  width: 50%; }
+  .plunas p {
+    margin: 0;
+    letter-spacing: 0.5rem;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300; }
 
 @media screen and (max-width: 576px) {
   /* Index */
@@ -99,6 +117,12 @@
       width: 90%; }
       .sectionclases .imgcartascontenedor .imgclases {
         width: 100%; }
+  .contenedorflexlunas {
+    flex-direction: column; }
+    .contenedorflexlunas .imglunas {
+      width: 100%; }
+    .contenedorflexlunas .plunas {
+      width: 100%; }
   /* REEL */
   .contenedorflex_reel {
     margin-top: 2rem;
@@ -107,7 +131,7 @@
     align-items: center; }
     .contenedorflex_reel .videosol {
       text-align: center; }
-      .contenedorflex_reel .videosol video {
+      .contenedorflex_reel .videosol .vsol {
         width: 80%;
         margin-top: 4rem;
         margin-bottom: 4rem; } }
@@ -227,7 +251,8 @@ body {
       body .gridcontenedor .footer h5 {
         font-size: 1.2rem;
         font-style: italic;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-weight: bolder; }
       body .gridcontenedor .footer .redes {
         align-self: center; }
         body .gridcontenedor .footer .redes a {

@@ -1,0 +1,63 @@
+@import "_utilities";
+.sectionclases {
+    display: flex;
+    justify-content: space-between;
+    .clases {
+        width: 50%;
+        margin-left: 1.3rem;
+        margin-top: 5rem;
+    }
+    .imgcartascontenedor{
+        margin-top: 5rem;
+        padding: 1rem;
+    }
+}
+
+/* Aca empieza cartas  lunas y expresion*/
+
+.texto1{
+    margin: 3rem 1rem;
+    h3{
+       
+        font-weight: bolder;
+    }
+    
+    
+}
+.contenedorflexlunas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+    
+    
+
+   
+    
+    
+    .imglunas {
+        
+        
+       
+        width: 35%;
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+.plunas{
+   margin: 0;
+    width: 50%;
+    p{
+        margin: 0;
+        letter-spacing: 0.5rem;
+        padding: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        
+    }
+}
+
