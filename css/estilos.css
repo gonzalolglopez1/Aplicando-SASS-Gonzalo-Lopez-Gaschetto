@@ -54,9 +54,9 @@ body .gridcontenedor .header, body .gridcontenedor .main .contenedorflex, body .
     padding: 1rem; }
 
 /* Aca empieza cartas  lunas y expresion*/
-.texto1 {
+.texto2 {
   margin: 3rem 1rem; }
-  .texto1 h3 {
+  .texto2 h3 {
     font-weight: bolder; }
 
 .contenedorflexlunas {
@@ -86,13 +86,15 @@ body .gridcontenedor .header, body .gridcontenedor .main .contenedorflex, body .
     font-size: 1.5rem; }
   .container-fluid {
     flex-direction: column-reverse; }
+    .container-fluid .navbar-toggler {
+      margin-bottom: 5em; }
     .container-fluid .collapse .navbar-nav .nav-link {
       font-size: 1rem;
       margin: 0;
       text-align: center;
       margin-bottom: 17em; }
-  .texto1 {
-    width: 100% !important;
+  .main .contenedorflex #texto1 {
+    width: 100%;
     text-align: center; }
   /* cursos */
   .sectioncursos {
@@ -109,12 +111,12 @@ body .gridcontenedor .header, body .gridcontenedor .main .contenedorflex, body .
   .sectionclases {
     flex-direction: column; }
     .sectionclases .clases {
-      width: 80%;
+      width: 90%;
       margin: 0 auto; }
       .sectionclases .clases .pacartas {
         width: 90%; }
     .sectionclases .imgcartascontenedor {
-      width: 90%; }
+      width: 100%; }
       .sectionclases .imgcartascontenedor .imgclases {
         width: 100%; }
   .contenedorflexlunas {

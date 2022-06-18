@@ -18,8 +18,12 @@
         flex-direction: column-reverse;
 
 
-
+        .navbar-toggler{
+            margin-bottom: 5em;
+         } 
+       
         .collapse {
+           
 
             .navbar-nav {
 
@@ -41,15 +45,17 @@
 
 
 
+.main{
 
-    .texto1 {
-        width: 100% !important;
-        text-align: center;
-
-
-
+    .contenedorflex{
+        #texto1 {
+            width: 100%;
+            text-align: center;
+            }
     }
-
+    
+}
+   
 
     /* cursos */
 
@@ -81,7 +87,7 @@
         flex-direction: column;
 
         .clases {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
 
             .pacartas {
@@ -90,7 +96,7 @@
         }
 
         .imgcartascontenedor {
-            width: 90%;
+            width: 100%;
 
             .imgclases {
                 width: 100%;
