@@ -1,4 +1,5 @@
 @import "_utilities";
+
 .sectionclases {
     display: flex;
     justify-content: space-between;
@@ -39,7 +40,10 @@
         
         
        
-        width: 35%;
+        width:30%;
+        padding: 2rem;
+        
+        
         transition: all 0.3s;
         &:hover{
             transform: scale(1.1);
@@ -53,11 +57,44 @@
     width: 50%;
     p{
         margin: 0;
-        letter-spacing: 0.5rem;
+        line-height: 2rem;
+        font-size: 1.3rem;
+        
         padding: 2rem;
-        font-family: Arial, Helvetica, sans-serif;
+        
         font-weight: 300;
+        transition: all 1.3s;
+        &:hover{
+            transition: all 1.3s;
+            transform: translateY(10px);
+            box-shadow: 0 10px 10px ;
+        }
         
     }
-}
+
+    #icolunas{
+        font-size: 2.4rem;
+        cursor: pointer;
+        margin-right: 2rem;
+     }
+    .codpago1{
+        width: 20rem;
+        margin-top: 11rem;
+        margin-left: 2rem;
+         display: flex;
+         align-items: center;
+         padding: 1rem;
+         line-height: -1.5rem;
+         font-size: 2rem;
+         text-decoration: none;
+         color: rgb(2, 111, 253);
+         transition: all 1s;
+         text-shadow: 0 0 10px ;
+         &:hover{
+             color: aliceblue;
+             // background-color: black;
+             transition: all 1s;
+             box-shadow: 5px 5px 10px;
+            }
+}       }
 

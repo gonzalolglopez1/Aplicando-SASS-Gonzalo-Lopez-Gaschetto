@@ -31,12 +31,12 @@
     .sectioncursos .cursos .precio {
       color: brown;
       box-shadow: 0 0 10px white; }
-    .sectioncursos .cursos .material-symbols-outlined {
+    .sectioncursos .cursos .fa-solid {
       font-size: 2.4rem;
       cursor: pointer;
       margin-right: 2rem; }
     .sectioncursos .cursos .codpago {
-      width: 13.2em;
+      width: 20rem;
       display: flex;
       align-items: center;
       padding: 1rem;
@@ -52,6 +52,7 @@
         box-shadow: 5px 5px 10px; }
 
 .contenedorflex_contacto {
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -96,7 +97,8 @@ body .gridcontenedor .header, body .gridcontenedor .main .contenedorflex, body .
   justify-content: center;
   margin-bottom: 5rem; }
   .contenedorflexlunas .imglunas {
-    width: 35%;
+    width: 30%;
+    padding: 2rem;
     transition: all 0.3s; }
     .contenedorflexlunas .imglunas:hover {
       transform: scale(1.1); }
@@ -106,10 +108,36 @@ body .gridcontenedor .header, body .gridcontenedor .main .contenedorflex, body .
   width: 50%; }
   .plunas p {
     margin: 0;
-    letter-spacing: 0.5rem;
+    line-height: 2rem;
+    font-size: 1.3rem;
     padding: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300; }
+    font-weight: 300;
+    transition: all 1.3s; }
+    .plunas p:hover {
+      transition: all 1.3s;
+      transform: translateY(10px);
+      box-shadow: 0 10px 10px; }
+  .plunas #icolunas {
+    font-size: 2.4rem;
+    cursor: pointer;
+    margin-right: 2rem; }
+  .plunas .codpago1 {
+    width: 20rem;
+    margin-top: 11rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    line-height: -1.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #026ffd;
+    transition: all 1s;
+    text-shadow: 0 0 10px; }
+    .plunas .codpago1:hover {
+      color: aliceblue;
+      transition: all 1s;
+      box-shadow: 5px 5px 10px; }
 
 @media screen and (max-width: 576px) {
   /* Index */
@@ -167,7 +195,9 @@ body .gridcontenedor .header, body .gridcontenedor .main .contenedorflex, body .
       .contenedorflex_reel .videosol .vsol {
         width: 80%;
         margin-top: 4rem;
-        margin-bottom: 4rem; } }
+        margin-bottom: 4rem; }
+  body .gridcontenedor .footer .titulodelfooter {
+    font-size: 1rem; } }
 
 .contenedorflex_reel {
   margin-top: 2rem;
@@ -190,7 +220,7 @@ body .gridcontenedor .header, body .gridcontenedor .main .contenedorflex, body .
   padding: 0;
   box-sizing: border-box; }
 
-p, h2, h3, h4, h5, h6 {
+p, h2, h3, h4, h5, h6, .boton {
   font-family: 'Mukta', sans-serif; }
 
 body {

@@ -2,7 +2,7 @@
 
     /* Index */
     .header {
-       
+
         .logosol__nav {
             a {
                 h2 {
@@ -18,12 +18,12 @@
         flex-direction: column-reverse;
 
 
-        .navbar-toggler{
+        .navbar-toggler {
             margin-bottom: 5em;
-         } 
-       
+        }
+
         .collapse {
-           
+
 
             .navbar-nav {
 
@@ -45,27 +45,27 @@
 
 
 
-.main{
+    .main {
 
-    .contenedorflex{
-        #texto1 {
-            width: 100%;
-            text-align: center;
+        .contenedorflex {
+            #texto1 {
+                width: 100%;
+                text-align: center;
             }
+        }
+
     }
-    
-}
-   
+
 
     /* cursos */
 
     .sectioncursos {
         flex-direction: column;
-        
+
 
         .imgcursos {
             width: 100%;
-            
+
 
             .imgcursos1 {
                 width: 100%;
@@ -107,12 +107,15 @@
 
 
     }
-    .contenedorflexlunas{
+
+    .contenedorflexlunas {
         flex-direction: column;
-        .imglunas{
+
+        .imglunas {
             width: 100%;
         }
-        .plunas{
+
+        .plunas {
             width: 100%;
         }
     }
@@ -137,5 +140,15 @@
 
 
     }
-}
 
+    body {
+        .gridcontenedor {
+            .footer {
+                .titulodelfooter {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+}
