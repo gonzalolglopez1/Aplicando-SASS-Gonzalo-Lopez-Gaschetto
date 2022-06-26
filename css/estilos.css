@@ -190,7 +190,7 @@ body .gridcontenedor .header, body .gridcontenedor .main .contenedorflex, body .
   padding: 0;
   box-sizing: border-box; }
 
-p {
+p, h2, h3, h4, h5, h6 {
   font-family: 'Mukta', sans-serif; }
 
 body {
@@ -266,8 +266,7 @@ body {
             margin: 0 auto; }
           body .gridcontenedor .main .contenedorflex .texto1 h3 {
             font-size: 30px;
-            padding: 2rem;
-            font-family: 'Mukta', sans-serif; }
+            padding: 2rem; }
         body .gridcontenedor .main .contenedorflex .noticias {
           margin: 4rem 0;
           padding: 2rem;
@@ -279,8 +278,7 @@ body {
           border: 1px solid black;
           border-radius: 2em; }
           body .gridcontenedor .main .contenedorflex .noticias .titulonoticias {
-            font-size: 1.2rem;
-            font-family: 'Mukta', sans-serif; }
+            font-size: 1.2rem; }
           body .gridcontenedor .main .contenedorflex .noticias .pnoticias {
             font-weight: 200; }
     body .gridcontenedor .footer {
